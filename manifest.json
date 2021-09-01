@@ -1,8 +1,8 @@
 {
   "name": "GanttPRO Zendesk Theme",
   "author": "GanttPRO",
-  "version": "3.0.0",
-  "api_version": 2,
+  "version": "1.0.0",
+  "api_version": 1,
   "default_locale": "en-us",
   "settings": [
     {

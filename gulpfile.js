@@ -31,7 +31,7 @@ function styles(cb) {
 }
 
 function javascript(cb) {
-  return src([JS_PATH + 'сopenhagen.js'])
+  return src([JS_PATH + 'theme.js'])
     .pipe(plumber())
     .pipe(gulpif(mode === 'dev', sourcemaps.init()))
     .pipe(concat('script.js'))
