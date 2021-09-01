@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "no-duplicate-selectors": true,
+    "color-no-invalid-hex": true,
+    "font-family-no-missing-generic-family-keyword": true,
+    "block-no-empty": true,
+    "comment-no-empty": true,
+  },
+  "ignoreFiles": ["**/*.js", "./style.css"]
+}
