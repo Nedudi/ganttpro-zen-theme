@@ -1,0 +1,77 @@
+/* Расскомментировать, если мешает верхняя панель, при разработке */
+/* #preview-bar-container {
+  display: none !important;
+} */
+
+.site-header {
+  max-width: 1140px;
+  height: auto;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.site-header__logo img {
+  width: 100%;
+  max-width: 198px;
+  max-height: none;
+  margin-right: 13px;
+  margin-bottom: 12px;
+
+  color: #212121;
+}
+
+.site-header__logo span {
+  position: relative;
+
+  display: block;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 22px;
+  color: #212121;
+}
+
+.site-header__nav .submit-a-request {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #424242;
+  text-decoration: none;
+}
+
+.site-header__nav .submit-a-request:hover,
+.site-header__nav .submit-a-request:focus {
+  text-decoration: none;
+  color: #212121;
+}
+
+@media (min-width: 860px) {
+  .site-header__logo a {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-header__logo img {
+    margin-bottom: 0;
+  }
+
+  .site-header__logo span {
+    display: inline-block;
+    padding-left: 12px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .site-header__logo span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 1px;
+    height: 100%;
+
+    background-color: #c4c4c4;
+  }
+}

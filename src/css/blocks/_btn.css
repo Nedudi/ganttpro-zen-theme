@@ -1,0 +1,29 @@
+a.btn,
+button.btn {
+  display: block;
+  padding: 9px 24px;
+
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #ffffff;
+
+  background-color: #ff9a00;
+  border-radius: 3px;
+
+  transition: background-color 0.2s;
+}
+
+a.btn:hover,
+button.btn:hover,
+a.btn:focus,
+button.btn:focus {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #ffffff;
+
+  background-color: #ff8600;
+}

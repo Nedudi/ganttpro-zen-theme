@@ -1,2 +1,8 @@
 /* General */
+@import "./general/_fonts.css";
 @import "./general/_theme.css";
+
+/* Blocks */
+@import "./blocks/_btn.css";
+
+@import "./blocks/_site-header.css";

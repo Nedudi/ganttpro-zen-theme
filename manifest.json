@@ -13,14 +13,14 @@
           "type": "color",
           "description": "brand_color_description",
           "label": "brand_color_label",
-          "value": "rgba(0, 86, 76, 1)"
+          "value": "#008A7A"
         },
         {
           "identifier": "brand_text_color",
           "type": "color",
           "description": "brand_text_color_description",
           "label": "brand_text_color_label",
-          "value": "#FFFFFF"
+          "value": "#424242"
         },
         {
           "identifier": "text_color",
@@ -60,7 +60,7 @@
           "type": "list",
           "description": "heading_font_description",
           "label": "heading_font_label",
-          "value": "'Helvetica Neue', Arial, Helvetica, sans-serif",
+          "value": "Lato, sans-serif",
           "options": [
             {
               "label": "System",
@@ -133,7 +133,7 @@
           "type": "list",
           "description": "text_font_description",
           "label": "text_font_label",
-          "value": "'Helvetica Neue', Arial, Helvetica, sans-serif",
+          "value": "Inter, sans-serif",
           "options": [
             {
               "label": "System",

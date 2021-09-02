@@ -6,5 +6,5 @@
     "block-no-empty": true,
     "comment-no-empty": true,
   },
-  "ignoreFiles": ["**/*.js", "./style.css"]
+  "ignoreFiles": ["**/*.js", "./src/css/general/_theme.css", "./style.css"]
 }

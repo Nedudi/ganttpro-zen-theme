@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /***** Normalize.css *****/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-html {
+
+:root {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
@@ -12,9 +13,6 @@ body {
 
 main {
   display: block;
-}
-
-div main div p {
 }
 
 h1 {
@@ -212,7 +210,7 @@ h4,
 h5,
 h6 {
   font-family: $heading_font;
-  font-weight: 400;
+  font-weight: bold;
   margin-top: 0;
 }
 
@@ -378,8 +376,7 @@ ul {
   margin: 0;
   padding: 0 20px;
   text-align: center;
-  transition: background-color 0.12s ease-in-out, border-color 0.12s ease-in-out,
-    color 0.15s ease-in-out;
+  transition: background-color 0.12s ease-in-out, border-color 0.12s ease-in-out, color 0.15s ease-in-out;
   user-select: none;
   white-space: nowrap;
   width: 100%;
@@ -463,9 +460,7 @@ ul {
 .article-subscribe button:hover[data-selected="true"],
 .community-follow button.button-primary:hover,
 .requests-table-toolbar .organization-subscribe button.button-primary:hover,
-.requests-table-toolbar
-  .organization-subscribe
-  button:hover[data-selected="true"],
+.requests-table-toolbar .organization-subscribe button:hover[data-selected="true"],
 .subscriptions-subscribe button.button-primary:hover,
 .subscriptions-subscribe button:hover[data-selected="true"],
 .button-primary.pagination-next-link:hover,
@@ -480,9 +475,7 @@ ul {
 .article-subscribe button:focus[data-selected="true"],
 .community-follow button.button-primary:focus,
 .requests-table-toolbar .organization-subscribe button.button-primary:focus,
-.requests-table-toolbar
-  .organization-subscribe
-  button:focus[data-selected="true"],
+.requests-table-toolbar .organization-subscribe button:focus[data-selected="true"],
 .subscriptions-subscribe button.button-primary:focus,
 .subscriptions-subscribe button:focus[data-selected="true"],
 .button-primary.pagination-next-link:focus,
@@ -497,9 +490,7 @@ ul {
 .article-subscribe button:active[data-selected="true"],
 .community-follow button.button-primary:active,
 .requests-table-toolbar .organization-subscribe button.button-primary:active,
-.requests-table-toolbar
-  .organization-subscribe
-  button:active[data-selected="true"],
+.requests-table-toolbar .organization-subscribe button:active[data-selected="true"],
 .subscriptions-subscribe button.button-primary:active,
 .subscriptions-subscribe button:active[data-selected="true"],
 .button-primary.pagination-next-link:active,
@@ -4499,23 +4490,17 @@ input[type="submit"][disabled] {
   margin-bottom: 30px;
 }
 
-.search-results-sidebar
-  .collapsible-sidebar[aria-expanded="false"]
-  .multibrand-filter-list {
+.search-results-sidebar .collapsible-sidebar[aria-expanded="false"] .multibrand-filter-list {
   display: none;
 }
 
 @media (min-width: 1024px) {
-  .search-results-sidebar
-    .collapsible-sidebar[aria-expanded="false"]
-    .multibrand-filter-list {
+  .search-results-sidebar .collapsible-sidebar[aria-expanded="false"] .multibrand-filter-list {
     display: block;
   }
 }
 
-.search-results-sidebar
-  .multibrand-filter-list--collapsed
-  li:nth-child(1n + 6) {
+.search-results-sidebar .multibrand-filter-list--collapsed li:nth-child(1n + 6) {
   display: none;
 }
 

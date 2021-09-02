@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Lato"), url("https://ganttrpo.azureedge.net/statics/fonts/Lato/Lato-Regular.woff2") format("woff2"),
+    url("https://ganttrpo.azureedge.net/statics/fonts/Lato/Lato-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: local("Lato"), url("https://ganttrpo.azureedge.net/statics/fonts/Lato/Lato-Bold.woff2") format("woff2"),
+    url("https://ganttrpo.azureedge.net/statics/fonts/Lato/Lato-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Inter"), url("https://ganttrpo.azureedge.net/statics/fonts/Inter/Inter-Regular.woff2") format("woff2"),
+    url("https://ganttrpo.azureedge.net/statics/fonts/Inter/Inter-Regular.woff") format("woff");
+}
