@@ -1,7 +1,7 @@
 /* Расскомментировать, если мешает верхняя панель, при разработке */
-#preview-bar-container {
+/* #preview-bar-container {
   display: none !important;
-}
+} */
 
 .site-header {
   max-width: 1140px;
