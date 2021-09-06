@@ -1,3 +1,4 @@
+/* Lato */
 @font-face {
   font-family: "Lato";
   font-style: normal;
@@ -16,6 +17,16 @@
     url("https://ganttrpo.azureedge.net/statics/fonts/Lato/Lato-Bold.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Lato"), url("https://ganttrpo.azureedge.net/statics/fonts/Lato/Lato-Black.woff2") format("woff2"),
+    url("https://ganttrpo.azureedge.net/statics/fonts/Lato/Lato-Black.woff") format("woff");
+}
+
+/* Inter */
 @font-face {
   font-family: "Inter";
   font-style: normal;

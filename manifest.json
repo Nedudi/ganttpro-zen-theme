@@ -27,7 +27,7 @@
           "type": "color",
           "description": "text_color_description",
           "label": "text_color_label",
-          "value": "rgba(23, 23, 23, 1)"
+          "value": "rgba(26, 26, 26, 1)"
         },
         {
           "identifier": "link_color",
@@ -60,7 +60,7 @@
           "type": "list",
           "description": "heading_font_description",
           "label": "heading_font_label",
-          "value": "'Helvetica Neue', Arial, Helvetica, sans-serif",
+          "value": "Lato, sans-serif",
           "options": [
             {
               "label": "System",
@@ -137,7 +137,7 @@
           "type": "list",
           "description": "text_font_description",
           "label": "text_font_label",
-          "value": "'Helvetica Neue', Arial, Helvetica, sans-serif",
+          "value": "Inter, sans-serif",
           "options": [
             {
               "label": "System",

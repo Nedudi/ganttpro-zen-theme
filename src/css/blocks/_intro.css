@@ -1,0 +1,122 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 38px;
+}
+
+.intro__title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+
+  font-size: calc(2em + 2vw);
+  line-height: 1.3;
+  text-align: center;
+}
+
+.intro__text {
+  order: -1;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-family: $text_font;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.intro__search {
+  height: auto;
+  background-image: none;
+}
+
+.intro__search-inner {
+  top: 0;
+
+  max-width: 546px;
+
+  transform: none;
+}
+
+.intro__search-inner .search {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+/* field */
+.intro__search-inner input:nth-child(2) {
+  height: auto;
+  margin: 0;
+  padding: 12px 14px 12px 12px;
+
+  color: $text_color;
+
+  border: 1px solid #9e9e9e;
+  border-right: none !important;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 3px;
+}
+
+.intro__search-inner input:nth-child(2)::placeholder {
+  color: #666666;
+}
+
+.intro__search-inner input:nth-child(2)::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("https://ganttpro.blob.core.windows.net/statics/media/images/zendesk/icon-cross.svg");
+  background-size: contain;
+  cursor: pointer;
+}
+
+.intro__search-inner input:nth-child(2):focus {
+  border-color: #ff9a00;
+  outline: none;
+}
+
+/* btn */
+.intro__search-inner input:nth-child(3) {
+  display: block;
+  min-width: 122px;
+  margin: 0;
+  padding: 12px 24px;
+
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #ffffff;
+
+  background-color: #ff9a00;
+  border: none;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  transition: background-color 0.2s;
+}
+
+.intro__search-inner input:nth-child(3):hover,
+.intro__search-inner input:nth-child(3):focus {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #ffffff;
+
+  background-color: #ff8600;
+  outline: none;
+}
+
+@media (min-width: 1160px) {
+  .intro__title {
+    font-size: 60px;
+    line-height: 72px;
+  }
+}

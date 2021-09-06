@@ -17,8 +17,8 @@ button.btn {
 }
 
 a.btn:hover,
-button.btn:hover,
 a.btn:focus,
+button.btn:hover,
 button.btn:focus {
   font-size: 16px;
   line-height: 24px;

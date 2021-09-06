@@ -4,7 +4,11 @@
     "color-no-invalid-hex": true,
     "font-family-no-missing-generic-family-keyword": true,
     "block-no-empty": true,
-    "comment-no-empty": true,
+    "comment-no-empty": true
   },
-  "ignoreFiles": ["**/*.js", "./src/css/general/_theme.css", "./style.css"]
+  "ignoreFiles": [
+    "**/*.js",
+    "./src/css/general/_theme.css",
+    "./style.css"
+  ]
 }

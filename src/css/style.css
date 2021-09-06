@@ -1,8 +1,10 @@
 /* General */
 @import "./general/_fonts.css";
 @import "./general/_theme.css";
+@import "./general/_global.css";
 
 /* Blocks */
 @import "./blocks/_btn.css";
+@import "./blocks/_intro.css";
 
 @import "./blocks/_site-header.css";
