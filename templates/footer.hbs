@@ -1,25 +1,153 @@
-<footer class="footer">
-  <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
+<footer class="footer site-footer">
+  <div class="footer-inner site-footer__inner">
+    <div class="site-footer__info">
+      {{#link "help_center"}}
+      <img src="{{settings.logo}}" width="180" height="22" loading="lazy" alt="{{t " home_page" name=help_center.name}}"
+        class="site-footer__logo" />
+      {{/link}}
 
-    <div class="footer-language-selector">
-      {{#if alternative_locales}}
-        <div class="dropdown language-selector">
-          <button class="dropdown-toggle" aria-haspopup="true">
-            {{current_locale.name}}
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
+      <p class="site-footer__copyright">© 2017 Ganttpro All rights reserved</p>
+
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#" target="_blank">
+            <svg width="10" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.653 7.656v3.487H6.26v9.143H2.79v-9.143H.504V7.656H2.79v-3.4S3.024.858 6.32.858h3.334v3.4H7.366S6.319 4.304 6.319 6v1.656h3.334z"
+                fill="#212121" />
             </svg>
-          </button>
-          <span class="dropdown-menu dropdown-menu-end" role="menu">
-            {{#each alternative_locales}}
-              <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-                {{name}}
-              </a>
-            {{/each}}
-          </span>
-        </div>
-      {{/if}}
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" target="_blank">
+            <svg width="18" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.933 2.487s-.217.874-1.091 1.524c-.875.65-1.092.874-1.092.874s1.092 4.138-3.05 7.836c-4.134 3.697-10.017 2.39-10.45 2.174C1.816 14.678.29 13.804.29 13.804s2.392-.433 3.484-.874c1.091-.433 1.525-.874 1.525-.874s-1.742-.217-2.392-.65c-.65-.433-1.092-1.74-1.092-1.74h1.742s-1.308-.65-1.959-1.524C.95 7.268.95 5.968.95 5.968l1.091.217S.732 4.878.95 3.137c.216-1.74.433-1.957.433-1.957S2.908 4.228 5.74 4.661c2.833.433 3.05.433 3.05.433C7.87-1.008 15.6.56 15.107 2.047c0 0 1.742-.874 1.959-1.307.217-.434-.434 1.957-.434 1.957l1.309-.217-.008.007z"
+                fill="#212121" />
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" target="_blank">
+            <svg width="17" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.143 17H1.14V5.968h3.003V17zM2.592 3.5C1.528 3.5.84 2.76.84 1.75S1.528 0 2.592 0c1.063 0 1.75.74 1.75 1.75S3.718 3.5 2.593 3.5zM13.15 17.032V11.5c0-1.461-.855-2.5-2.002-2.5-.892 0-1.746.342-2.001 1-.064.22 0 .708 0 1v6.032H6.144V6h3.003v2c.19-.73 1.587-2 3.244-2 2.104 0 3.76 1.534 3.76 4.895v6.137H13.15z"
+                fill="#212121" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <p class="site-footer__cookies">Cookies help us deliver our services. By using our services, you agree to our use
+        of cookies. Read more in
+        Privacy policy.</p>
     </div>
+
+    <ul class="site-footer__nav-list">
+      <li class="site-footer__nav-item">
+        <p class="site-footer__nav-title">Learn more</p>
+        <ul>
+          <li>
+            <a href="#" target="_blank">About us</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Plans and pricing</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Blog</a>
+          </li>
+        </ul>
+      </li>
+      <li class="site-footer__nav-item">
+        <p class="site-footer__nav-title">Support</p>
+        <ul>
+          <li>
+            <a href="#" target="_blank">Help center</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Youtube channel</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Terms of service</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Refund Policy</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Contact us</a>
+          </li>
+        </ul>
+      </li>
+      <li class="site-footer__nav-item">
+        <p class="site-footer__nav-title">Templates</p>
+        <ul>
+          <li>
+            <a href="#" target="_blank">Web Development</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Business Development</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Construction projects</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Event planning</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Web Design</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Educational projects</a>
+          </li>
+        </ul>
+      </li>
+      <li class="site-footer__nav-item">
+        <p class="site-footer__nav-title">Features</p>
+        <ul>
+          <li>
+            <a href="#" target="_blank">What is Gantt chart</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Team management</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Project scheduling</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Export and sharing</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Resource Management</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Gantt chart templates</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    {{!-- <div class="footer-language-selector">
+      {{#if alternative_locales}}
+      <div class="dropdown language-selector">
+        <button class="dropdown-toggle" aria-haspopup="true">
+          {{current_locale.name}}
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12"
+            class="dropdown-chevron-icon">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5" />
+          </svg>
+        </button>
+        <span class="dropdown-menu dropdown-menu-end" role="menu">
+          {{#each alternative_locales}}
+          <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+            {{name}}
+          </a>
+          {{/each}}
+        </span>
+      </div>
+      {{/if}}
+    </div> --}}
   </div>
 </footer>

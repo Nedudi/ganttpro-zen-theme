@@ -1,0 +1,22 @@
+.social {
+  display: grid;
+  grid-auto-columns: 32px;
+  grid-auto-flow: column;
+  column-gap: 12px;
+
+  list-style: none;
+}
+
+.social__item {
+  height: 32px;
+
+  border: 1px solid #212121;
+  opacity: 0.23;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
