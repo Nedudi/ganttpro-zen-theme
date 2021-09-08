@@ -1,0 +1,9 @@
+.breadcrumbs li + li::before {
+  content: "/";
+
+  color: $text_color;
+}
+
+.breadcrumbs li a {
+  color: #757575;
+}

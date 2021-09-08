@@ -8,6 +8,11 @@
 @import "./blocks/_intro.css";
 @import "./blocks/_articles-list.css";
 @import "./blocks/_social.css";
+@import "./blocks/_search-panel.css";
+@import "./blocks/_search-results.css";
+@import "./blocks/_result-article.css";
+@import "./blocks/_breadcrumbs.css";
+@import "./blocks/_pagination.css";
 
 @import "./blocks/_site-header.css";
 @import "./blocks/_site-footer.css";

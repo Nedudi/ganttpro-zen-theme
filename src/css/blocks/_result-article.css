@@ -1,0 +1,30 @@
+.result-article {
+  padding: 24px 0 !important;
+}
+
+.result-article + .result-article {
+  padding-top: 0 !important;
+}
+
+.result-article h2.search-result-title {
+  margin-bottom: 6px;
+
+  font-size: 24px;
+  line-height: 36px;
+  color: #161616;
+}
+
+.result-article .search-result-title * {
+  color: inherit;
+}
+
+.result-article .search-results-description {
+  margin-top: 0;
+
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.result-article .meta-group {
+  margin-top: 12px;
+}
