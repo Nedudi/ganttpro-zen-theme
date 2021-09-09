@@ -1,10 +1,10 @@
-.articles-list {
+.home-page .blocks-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 13px;
 }
 
-.articles-list__item {
+.home-page .blocks-item {
   width: 100%;
   margin: 0;
 
@@ -12,22 +12,22 @@
   border-color: #bfbfbf;
 }
 
-.articles-list__item:hover,
-.articles-list__item:focus {
+.home-page .blocks-item:hover,
+.home-page .blocks-item:focus {
   background-color: #ffffff;
 }
 
-.articles-list__link {
+.home-page .blocks-item-link {
   justify-content: start;
   padding: 12px 12px 24px;
 }
 
-.articles-list__link:focus {
+.home-page .blocks-item-link:focus {
   outline: none;
   box-shadow: none;
 }
 
-.articles-list__img {
+.home-page .blocks-img {
   height: 156px;
   margin-bottom: 12px;
   overflow: hidden;
@@ -35,7 +35,7 @@
   background: linear-gradient(0deg, #ededed, #ededed), #ededed;
 }
 
-.articles-list__img img {
+.home-page .blocks-img img {
   display: block;
   width: 100%;
   height: 100%;
@@ -43,7 +43,7 @@
   object-fit: cover;
 }
 
-.articles-list__title {
+.home-page .blocks-item-title {
   margin-bottom: 12px;
 
   font-size: 24px;
@@ -52,7 +52,7 @@
   color: #212121 !important;
 }
 
-.articles-list__descr {
+.home-page .blocks-item-description {
   margin-top: 0;
 
   color: $text_color !important;

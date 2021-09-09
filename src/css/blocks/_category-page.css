@@ -1,0 +1,113 @@
+.category-page,
+.section-page {
+  padding-top: 20px;
+}
+
+.category-page .sub-nav,
+.section-page .sub-nav {
+  display: block;
+  margin-bottom: 36px;
+  padding-bottom: 0;
+}
+
+.category-page .search-panel,
+.section-page .search-panel {
+  margin-bottom: 36px;
+}
+
+.category-page .search-panel input[type="search"],
+.section-page .search-panel input[type="search"] {
+  background-color: #ffffff;
+
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+}
+
+.category-page .breadcrumbs li,
+.section-page .breadcrumbs li {
+  color: $link_color;
+}
+
+.category-page .breadcrumbs li + li::before,
+.section-page .breadcrumbs li + li::before {
+  content: "/";
+
+  color: $link_color;
+}
+
+.category-page .page-header,
+.section-page .page-header {
+  display: block;
+  margin-bottom: 42px;
+}
+
+.category-page h1,
+.section-page h1 {
+  margin-bottom: 0;
+
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.category-page .page-header-description,
+.section-page .page-header-description {
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.category-page .category-content {
+  flex-basis: 100%;
+}
+
+.category-page .section-tree-title,
+.section-page .section-tree-title {
+  margin-bottom: 11px;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.category-page .section-tree {
+  display: block;
+}
+
+.category-page .section-tree .section {
+  margin-bottom: 48px;
+}
+
+.category-page .article-list,
+.section-page .article-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+  column-gap: 80px;
+}
+
+.category-page .article-list-item,
+.section-page .article-list-item {
+  padding: 0;
+
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.category-page .article-list-link,
+.section-page .article-list-link {
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  vertical-align: middle;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $link_color;
+}
+
+.category-page .article-list-link:hover,
+.section-page .article-list-link:hover {
+  font-weight: bold;
+}
