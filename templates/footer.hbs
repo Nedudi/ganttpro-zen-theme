@@ -44,6 +44,8 @@
     </div>
 
     <ul class="site-footer__nav-list">
+      {{!-- English menu --}}
+      {{#is help_center.locale "en-us"}}
       <li class="site-footer__nav-item">
         <p class="site-footer__nav-title">Learn more</p>
         <ul>
@@ -127,6 +129,15 @@
           </li>
         </ul>
       </li>
+      {{/is}}
+      {{!-- Russian menu --}}
+      {{#is help_center.locale "ru"}}
+      <p>ru menu</p>
+      {{/is}}
+      {{!-- Español menu --}}
+      {{#is help_center.locale "es"}}
+      <p>es menu</p>
+      {{/is}}
     </ul>
 
     {{!-- <div class="footer-language-selector">
