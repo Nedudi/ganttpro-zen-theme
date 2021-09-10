@@ -1,0 +1,141 @@
+.article-page h1 {
+  margin-bottom: 24px;
+
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.article-page .collapsible-sidebar-body {
+  padding-top: 10px;
+}
+
+.article-page .sidenav-item {
+  margin-bottom: 5px;
+  padding: 12px;
+}
+
+.article-page .sidenav-item.current-article {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.article-page .sidenav-item:not(.current-article):hover {
+  color: #212121;
+
+  background-color: #e9ebed;
+}
+
+.article-page .article-header {
+  margin-bottom: 24px;
+}
+
+.article-page .article-meta > a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #424242;
+}
+
+.article-page .article-meta .meta-data {
+  font-size: 12px;
+  line-height: 16px;
+  color: $link_color;
+}
+
+.article-page .article-content {
+  margin-top: 0;
+}
+
+.article-page .article-body {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.article-page .article-body h2,
+.article-page .article-body h3,
+.article-page .article-body h4,
+.article-page .article-body h5,
+.article-page .article-body h6 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+
+  color: #161616;
+}
+
+.article-page .article-body h2 {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.article-page .article-body h3 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.article-page .article-body p {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.article-page .article-body a:hover,
+.article-page .article-attachments a:hover {
+  font-weight: bold;
+}
+
+.article-page .article-body iframe {
+  max-width: 100%;
+}
+
+.article-page .article-body img {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.article-page .article-votes {
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  border-bottom: 1px solid #c4c4c4;
+  border-color: #c4c4c4;
+}
+
+.article-page .article-votes-question {
+  font-weight: bold;
+  color: #212121;
+}
+
+.article-page .article-votes-controls {
+  margin-top: 18px;
+}
+
+.article-page .article-vote {
+  margin: 0 6px;
+  padding: 6px 26px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #424242;
+
+  background-color: #fbfbfb;
+  border: none;
+}
+
+.article-page .article-vote:hover {
+  color: #ffffff;
+
+  background-color: $brand_color;
+}
+
+@media (min-width: 1024px) {
+  .article-page .article-container {
+    display: grid;
+    grid-template-columns: 32% 68%;
+    column-gap: 34px;
+  }
+
+  .article-page .sidenav-title {
+    display: none;
+  }
+}

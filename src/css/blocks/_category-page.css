@@ -1,22 +1,26 @@
 .category-page,
-.section-page {
+.section-page,
+.article-page {
   padding-top: 20px;
 }
 
 .category-page .sub-nav,
-.section-page .sub-nav {
+.section-page .sub-nav,
+.article-page .sub-nav {
   display: block;
   margin-bottom: 36px;
   padding-bottom: 0;
 }
 
 .category-page .search-panel,
-.section-page .search-panel {
+.section-page .search-panel,
+.article-page .search-panel {
   margin-bottom: 36px;
 }
 
 .category-page .search-panel input[type="search"],
-.section-page .search-panel input[type="search"] {
+.section-page .search-panel input[type="search"],
+.article-page .search-panel input[type="search"] {
   background-color: #ffffff;
 
   border: none;
@@ -25,12 +29,14 @@
 }
 
 .category-page .breadcrumbs li,
-.section-page .breadcrumbs li {
+.section-page .breadcrumbs li,
+.article-page .breadcrumbs li {
   color: $link_color;
 }
 
 .category-page .breadcrumbs li + li::before,
-.section-page .breadcrumbs li + li::before {
+.section-page .breadcrumbs li + li::before,
+.article-page .breadcrumbs li + li::before {
   content: "/";
 
   color: $link_color;

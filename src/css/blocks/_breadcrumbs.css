@@ -4,6 +4,7 @@
   color: $text_color;
 }
 
+.breadcrumbs li,
 .breadcrumbs li a {
   font-size: 14px;
   line-height: 24px;
