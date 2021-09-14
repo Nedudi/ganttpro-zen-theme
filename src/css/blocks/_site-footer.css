@@ -115,10 +115,6 @@
   margin-top: 10px;
 }
 
-.site-footer__nav-item li:nth-child(1n + 10) {
-  display: none;
-}
-
 .site-footer__nav-title {
   margin-top: 0;
   margin-bottom: 22px;
@@ -129,6 +125,20 @@
   color: #212121;
 
   text-transform: uppercase;
+}
+
+.site-footer__nav-more {
+  margin-top: 10px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  color: $text_color;
+}
+
+.site-footer__nav-more:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .site-footer .social {
