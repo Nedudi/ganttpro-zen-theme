@@ -1,0 +1,30 @@
+.app-stores {
+  display: grid;
+  grid-template-columns: 96px 107px;
+  column-gap: 12px;
+}
+
+.app-stores__item a {
+  display: block;
+  height: 32px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  opacity: 0.7;
+
+  transition: opacity 0.2;
+}
+
+.app-stores__item a:hover {
+  opacity: 1;
+}
+
+.app-stores__item--apple a {
+  background-image: url("https://ganttpro.blob.core.windows.net/statics/media/images/app-stores/img_app_store_for_light.svg");
+}
+
+.app-stores__item--google a {
+  background-image: url("https://ganttpro.blob.core.windows.net/statics/media/images/app-stores/img_google_play_for_light.svg");
+}

@@ -10,8 +10,16 @@
 .social__item {
   height: 32px;
 
-  border: 1px solid #212121;
-  opacity: 0.23;
+  border: 1px solid rgba(33, 33, 33, 0.5);
+  border-radius: 3px;
+
+  transition: border-color 0.2s;
+}
+
+.social__item svg {
+  fill: rgba(33, 33, 33, 0.5);
+
+  transition: fill 0.2s;
 }
 
 .social__link {
@@ -19,4 +27,12 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+.social__item:hover {
+  border-color: rgba(33, 33, 33, 0.75);
+}
+
+.social__item:hover svg {
+  fill: rgba(33, 33, 33, 0.75);
 }

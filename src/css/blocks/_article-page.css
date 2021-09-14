@@ -79,9 +79,8 @@
   margin-bottom: 9px;
 }
 
-.article-page .article-body a:hover,
-.article-page .article-attachments a:hover {
-  font-weight: bold;
+.article-page .article-body a:hover {
+  color: #00564c;
 }
 
 .article-page .article-body iframe {

@@ -10,3 +10,11 @@ h5,
 h6 {
   color: #212121;
 }
+
+a {
+  color: $brand_color;
+}
+
+a:hover {
+  color: #00564c;
+}

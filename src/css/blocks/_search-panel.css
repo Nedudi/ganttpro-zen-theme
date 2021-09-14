@@ -19,7 +19,7 @@
 }
 
 .search-panel input[type="search"] {
-  padding: 12px 48px 12px 12px;
+  padding: 12px 12px 12px 46px;
 
   font-size: 18px;
   line-height: 36px;
@@ -52,8 +52,7 @@
 
 .search-panel .search-icon {
   top: 60%;
-  right: 12px;
-  left: auto;
+  left: 14px;
 
   fill: #9e9e9e;
 }

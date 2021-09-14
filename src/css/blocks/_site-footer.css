@@ -22,27 +22,82 @@
   max-height: none;
 }
 
+.site-footer__copyright,
+.site-footer__cookies,
+.site-footer__contacts,
+.site-footer__locales a {
+  color: rgba(33, 33, 33, 0.5);
+}
+
 .site-footer__copyright {
   margin: 24px 0;
 
   font-size: 14px;
   line-height: 24px;
-  color: #c1c1c1;
 }
 
 .site-footer__cookies {
   margin-top: 24px;
+  margin-bottom: 24px;
 
   font-size: 14px;
   line-height: 18px;
-  color: #c1c1c1;
+}
+
+.site-footer__contacts {
+  margin-bottom: 24px;
+}
+
+.site-footer__contacts br {
+  display: none;
+}
+
+.site-footer__contacts a {
+  display: block;
+  max-width: max-content;
+}
+
+.site-footer__locales {
+  margin-bottom: 24px;
+}
+
+.site-footer__locales a {
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+
+  transition: color 0.2s;
+}
+
+.site-footer__locales a + a {
+  position: relative;
+
+  margin-left: 24px;
+}
+
+.site-footer__locales a + a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -12px;
+
+  width: 1px;
+  height: 10px;
+
+  background-color: rgba(33, 33, 33, 0.3);
+
+  transform: translate(0, -50%);
+}
+
+.site-footer__locales a:not(.site-footer__current-locale):hover {
+  color: rgba(33, 33, 33, 0.75);
 }
 
 .site-footer__nav-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 160px);
+  grid-template-columns: repeat(auto-fit, 150px);
   justify-content: space-between;
-  gap: 40px 20px;
+  gap: 30px 20px;
 }
 
 .site-footer__nav-item a {
@@ -52,8 +107,16 @@
   color: $text_color;
 }
 
+.site-footer__nav-item a:hover {
+  text-decoration: underline;
+}
+
 .site-footer__nav-item li + li {
   margin-top: 10px;
+}
+
+.site-footer__nav-item li:nth-child(1n + 10) {
+  display: none;
 }
 
 .site-footer__nav-title {
@@ -68,10 +131,14 @@
   text-transform: uppercase;
 }
 
+.site-footer .social {
+  margin-bottom: 12px;
+}
+
 @media (min-width: 1200px) {
   .site-footer__inner {
-    grid-template-columns: minmax(250px, 281px) 1fr;
-    gap: 0 88px;
+    grid-template-columns: 260px 1fr;
+    gap: 0 25px;
   }
 
   .site-footer__info {
@@ -79,6 +146,11 @@
   }
 
   .site-footer__nav-list {
+    gap: 30px 10px;
     margin-right: -15px;
+  }
+
+  .site-footer__contacts br {
+    display: inline;
   }
 }
