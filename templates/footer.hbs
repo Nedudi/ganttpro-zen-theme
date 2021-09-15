@@ -62,16 +62,35 @@
             title="Google Play"></a></li>
       </ul>
 
+      {{!-- Cookies ... --}}
+      {{#is help_center.locale "en-us"}}
       <p class="site-footer__cookies">Cookies help us deliver our services. By using our services, you agree to our use
         of cookies. Read more in
-        <a href="https://ganttpro.com/en/privacy-policy-ganttpro/" target="_blank">Privacy policy</a>.
+        <a href="https://ganttpro.com/privacy-policy-ganttpro/" target="_blank">Privacy policy</a>.
       </p>
+      {{/is}}
+      {{#is help_center.locale "ru"}}
+      <p class="site-footer__cookies">Используя этот сервис, вы соглашаетесь с нашим правилами по работе с cookies.
+        Подробнее в
+        <a href="https://ganttpro.com/privacy-policy-ganttpro/" target="_blank">Политике конфиденциальности</a>.
+      </p>
+      {{/is}}
 
+      {{!-- Address --}}
+      {{#is help_center.locale "en-us"}}
       <p class="site-footer__contacts">3A Kollektornaya str. <br> Minsk 220004, Belarus
         <a href="mailto:support@ganttpro.com">support@ganttpro.com</a>
         <a href="tel:+13019797792">+13019797792</a>
       </p>
+      {{/is}}
+      {{#is help_center.locale "ru"}}
+      <p class="site-footer__contacts">Коллекторная 3А <br> Минск 220004, Беларусь
+        <a href="mailto:support@ganttpro.com">support@ganttpro.com</a>
+        <a href="tel:+13019797792">+13019797792</a>
+      </p>
+      {{/is}}
 
+      {{!-- Locales --}}
       {{#if alternative_locales}}
       <ul class="site-footer__locales">
         {{#is help_center.locale "en-us"}}
@@ -96,6 +115,7 @@
 
     </div>
 
+    {{!-- Navigation --}}
     <ul class="site-footer__nav-list">
       {{!-- English menu --}}
       {{#is help_center.locale "en-us"}}
@@ -329,11 +349,235 @@
       {{/is}}
       {{!-- Russian menu --}}
       {{#is help_center.locale "ru"}}
-      <p>ru menu</p>
+      <li class="site-footer__nav-item">
+        <p class="site-footer__nav-title">Узнать больше</p>
+        <ul>
+          <li>
+            <a href="https://ganttpro.com/ru/why-us-ganttpro/" target="_blank">Почему GanttPRO</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/about-us/" target="_blank">О проекте и команде</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/ganttpro-features/" target="_blank">Возможности GanttPRO</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/demo/" target="_blank">Записаться на демо</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/customer-stories/" target="_blank">Истории пользователей</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/awards/" target="_blank">Награды</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/partner-offer/" target="_blank">Скидки партнёров</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/partners/" target="_blank">Партнерство</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/software-discounts-for-nonprofits/" target="_blank">Некоммерческие
+              организации</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/pricing/" target="_blank">Тарифные планы</a>
+          </li>
+          <li>
+            <a href="https://blog.ganttpro.com/ru/" target="_blank">Блог</a>
+          </li>
+        </ul>
+      </li>
+      <li class="site-footer__nav-item">
+        <p class="site-footer__nav-title">Помощь</p>
+        <ul>
+          <li>
+            <a href="https://blog.ganttpro.com/ru/faq-ru/" target="_blank">Центр поддержки</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/terms-of-use-ganttpro/" target="_blank">Условия предоставления услуг</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/privacy-policy-ganttpro/" target="_blank">Политика конфиденциальности</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/security-ganttpro/" target="_blank">Безопасность</a>
+          </li>
+        </ul>
+      </li>
+      <li class="site-footer__nav-item">
+        <p class="site-footer__nav-title">Шаблоны</p>
+        <ul>
+          <li>
+            <a href="https://ganttpro.com/ru/software-development-plan-template/" target="_blank">ИТ и технологии</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/agile-waterfall-hybrid-template/" target="_blank">Agile + Waterfall</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/maintenance-schedule-template/" target="_blank">Профессиональные услуги</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/construction-project-schedule-template/" target="_blank">Строительство</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/free-marketing-campaign-template/" target="_blank">Маркетинг</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/event-planning-template/" target="_blank">Организация мероприятий</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/gantt-chart-template/" target="_blank">Шаблоны диаграммы Ганта</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/web-design-project-plan-template/" target="_blank">Веб дизайн</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/free-new-product-launch-plan-template/" target="_blank">Производство
+              продукта</a>
+          </li>
+        </ul>
+      </li>
+      <li class="site-footer__nav-item">
+        <p class="site-footer__nav-title">Решения</p>
+        <ul>
+          <li>
+            <a href="https://ganttpro.com/ru/how-create-project-timeline-using-gantt-charts/" target="_blank">Как
+              построить диаграмму Ганта</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/cloud-project-portfolio-management-ppm-software/"
+              target="_blank">Управление портфелем</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/free-online-microsoft-mpp-project-viewer/" target="_blank">Открыть MPP
+              файл</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/jira-integration/" target="_blank">Интеграция c Jira</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/sistema-upravlenija-proektami-online/" target="_blank">Онлайн система
+              управления</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/task-manager-na-russkom-online/" target="_blank">Task менеджер</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/sistema-upravlenija-stroitelnymi-proektami/" target="_blank">Управление
+              строительными проектами</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/programma-dlja-upravlenija-zadachami-online/" target="_blank">Управление
+              задачами онлайн</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/planirovshhik-zadach-online/" target="_blank">Планировщик онлайн</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/planirovshhik-del-i-celej-na-god/" target="_blank">Планирование на год</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/planirovshhik-del-i-celej-na-mesjac/" target="_blank">Планирование на
+              месяц</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/planirovshhik-del-i-celej-na-nedelju/" target="_blank">Планирование на
+              неделю</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/programma-dlja-kontrolja-vypolnenija-zadach/" target="_blank">Контроль
+              выполнения задач</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/sistema-upravlenija-komandoj/" target="_blank">Управление командой</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/sistema-upravlenija-resursami/" target="_blank">Управление ресурсами</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/kalendarnoe-planirovanie-proekta/" target="_blank">Календарное
+              планирование</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/sistema-sovmestnoj-raboty/" target="_blank">Совместная работа</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/programma-dlja-planirovanija-proizvodstva/" target="_blank">Планирование
+              производства</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/programma-dlja-kontrolja-ispolnenija-poruchenij/" target="_blank">Контроль
+              исполнения поручений</a>
+          </li>
+        </ul>
+      </li>
+      <li class="site-footer__nav-item">
+        <p class="site-footer__nav-title">Аналоги</p>
+        <ul>
+          <li>
+            <a href="https://ganttpro.com/ru/wrike-alternative/" target="_blank">Аналог Wrike</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/liquidplanner-alternative/" target="_blank">Аналог Liquidplanner</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/smartsheet-alternative/" target="_blank">Аналог Smartsheet</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/microsoft-project-alternative/" target="_blank">Аналог MS Project</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/microsoft-project-online-alternative/" target="_blank">Аналог MS Project
+              Online</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/teamgantt-alternative/" target="_blank">Аналог Teamgantt</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/asana-alternative/" target="_blank">Аналог Asana</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/monday-alternative/" target="_blank">Аналог Monday</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/celoxis-alternative/" target="_blank">Аналог Celoxis</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/aha-alternative/" target="_blank">Аналог Aha</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/easyprojects-alternative/" target="_blank">Аналог Easyprojects</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/projectlibre-alternative/" target="_blank">Аналог ProjectLibre</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/clarizen-alternative/" target="_blank">Аналог Clarizen</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/megaplan-alternative/" target="_blank">Аналог Megaplan</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/planfix-alternative/" target="_blank">Аналог Planfix</a>
+          </li>
+          <li>
+            <a href="https://ganttpro.com/ru/bitrix24-alternative/" target="_blank">Аналог Bitrix24</a>
+          </li>
+        </ul>
+      </li>
       {{/is}}
       {{!-- Español menu --}}
       {{#is help_center.locale "es"}}
-      <p>es menu</p>
+      <li class="site-footer__nav-item">
+        <p class="site-footer__nav-title">es menu</p>
+        <ul>
+          <li>
+            <a href="" target="_blank"></a>
+          </li>
+
+        </ul>
+      </li>
       {{/is}}
     </ul>
 
