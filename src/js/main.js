@@ -7,11 +7,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const VISBLE_ITEMS = 9;
     const submenus = document.querySelectorAll('.site-footer__nav-list > li');
+    const pageLang = document.documentElement.getAttribute('lang');
 
     function createButton() {
       const btn = document.createElement('button');
+      let label;
 
-      btn.textContent = 'and more';
+      switch (pageLang) {
+        case 'ru':
+          label = 'и другое!';
+          break;
+        case 'es':
+          label = '¡y más!';
+          break;
+        default:
+          label = 'and more';
+      }
+
+      btn.textContent = label;
       btn.classList = 'site-footer__nav-more';
 
       btn.addEventListener('click', function (evt) {
