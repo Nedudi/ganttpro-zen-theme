@@ -1,6 +1,5 @@
+.vscode
+node_modules
+
 .zat
 package-lock.json
-
-node_modules/
-vscode/
-
