@@ -4,10 +4,10 @@
 
 .site-footer {
   margin-top: auto;
-  padding-top: 53px;
+  padding-top: 57px;
   padding-bottom: 92px;
 
-  border-top: none;
+  border-top: 1px solid #c4c4c4;
 }
 
 .site-footer__inner {

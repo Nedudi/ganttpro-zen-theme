@@ -4,11 +4,16 @@
   padding-top: 20px;
 }
 
+.category-page,
+.section-page {
+  padding-bottom: 98px;
+}
+
 .category-page .sub-nav,
 .section-page .sub-nav,
 .article-page .sub-nav {
   display: block;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
   padding-bottom: 0;
 }
 
@@ -16,16 +21,6 @@
 .section-page .search-panel,
 .article-page .search-panel {
   margin-bottom: 36px;
-}
-
-.category-page .search-panel input[type="search"],
-.section-page .search-panel input[type="search"],
-.article-page .search-panel input[type="search"] {
-  background-color: #ffffff;
-
-  border: none;
-  border-bottom: 1px solid #9e9e9e;
-  border-radius: 0;
 }
 
 .category-page .breadcrumbs li,
@@ -51,16 +46,16 @@
 .category-page .page-header,
 .section-page .page-header {
   display: block;
-  margin-bottom: 42px;
+  margin-bottom: 31px;
 }
 
 .category-page h1,
 .section-page h1 {
-  margin-bottom: 0;
+  margin-bottom: 6px;
 
   font-weight: 900;
-  font-size: 30px;
-  line-height: 48px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .category-page .article-list a:hover,
@@ -83,8 +78,6 @@
 
 .category-page .section-tree-title,
 .section-page .section-tree-title {
-  margin-bottom: 11px;
-
   font-size: 18px;
   line-height: 24px;
 }
@@ -99,7 +92,7 @@
 }
 
 .category-page .section-tree .section {
-  margin-bottom: 48px;
+  margin-bottom: 30px;
 }
 
 .category-page .article-list,
@@ -120,7 +113,7 @@
 .section-page .article-list-link {
   display: inline-block;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
 
   vertical-align: middle;
 

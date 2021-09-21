@@ -1,16 +1,18 @@
 .breadcrumbs li + li::before {
   content: "/";
 
-  color: $text_color;
+  color: #9e9e9e;
 }
 
 .breadcrumbs li {
   font-size: 14px;
   line-height: 24px;
+
+  color: #9e9e9e;
 }
 
 .breadcrumbs li a {
   font-size: 14px;
   line-height: 24px;
-  color: #757575;
+  color: #9e9e9e;
 }
