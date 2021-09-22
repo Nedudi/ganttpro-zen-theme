@@ -2,6 +2,7 @@
 @import "./general/_fonts.css";
 @import "./general/_theme.css";
 @import "./general/_global.css";
+@import "./general/_atomic.css";
 
 /* Blocks */
 @import "./blocks/_btn.css";

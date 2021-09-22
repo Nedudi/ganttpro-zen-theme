@@ -58,15 +58,31 @@
 .article-page .article-body h4,
 .article-page .article-body h5,
 .article-page .article-body h6 {
-  margin-top: 6px;
+  margin-top: 0;
   margin-bottom: 6px;
 
   color: #161616;
 }
 
+.article-page .article-body h2 strong,
+.article-page .article-body h3 strong,
+.article-page .article-body h4 strong,
+.article-page .article-body h5 strong,
+.article-page .article-body h6 strong {
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.article-page .article-body strong {
+  font-weight: bold;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .article-page .article-body h2 {
   font-size: 24px;
-  line-height: 26px;
+  line-height: 36px;
 }
 
 .article-page .article-body h3 {
@@ -76,7 +92,13 @@
 
 .article-page .article-body p {
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 18px;
+}
+
+.article-page .article-body ul,
+.article-page .article-body ol {
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .article-page .article-body a:hover {
