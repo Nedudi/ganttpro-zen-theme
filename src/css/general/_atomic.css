@@ -29,23 +29,3 @@
 .mb-auto {
   margin-bottom: auto !important;
 }
-
-.alert-info,
-.alert-warning {
-  margin: 24px 0;
-  padding: 20px;
-
-  border: 2px solid #4858ac;
-  border-radius: 5px;
-}
-
-.alert-warning {
-  border-color: #ee7950;
-}
-
-@media (min-width: 768px) {
-  .alert-info,
-  .alert-warning {
-    padding: 30px;
-  }
-}

@@ -59,9 +59,42 @@
 .article-page .article-body h5,
 .article-page .article-body h6 {
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 0;
 
   color: #161616;
+}
+
+.article-page .article-body h2 {
+  margin-bottom: 6px;
+
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.article-page .article-body h3 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.article-page .article-body h4 {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.article-page .article-body h5 {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.article-page .article-body h6 {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.article-page .article-body strong {
+  font-weight: bold;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .article-page .article-body h2 strong,
@@ -72,22 +105,6 @@
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-
-.article-page .article-body strong {
-  font-weight: bold;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-.article-page .article-body h2 {
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.article-page .article-body h3 {
-  font-size: 18px;
-  line-height: 30px;
 }
 
 .article-page .article-body p {
@@ -112,6 +129,28 @@
 .article-page .article-body img {
   margin-top: 9px;
   margin-bottom: 9px;
+}
+
+.article-page .article-body .alert-info,
+.article-page .article-body .alert-warning {
+  margin: 24px 0;
+  padding: 20px;
+
+  border: 2px solid #4858ac;
+  border-radius: 5px;
+}
+
+.article-page .article-body .alert-warning {
+  border-color: #ee7950;
+}
+
+.article-page .article-body .icon-img {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  height: 24px;
+  margin: 0;
+  padding: 0 5px;
 }
 
 .article-page .article-votes {
@@ -146,6 +185,13 @@
   color: #ffffff;
 
   background-color: $brand_color;
+}
+
+@media (min-width: 768px) {
+  .article-page .article-body .alert-info,
+  .article-page .article-body .alert-warning {
+    padding: 30px;
+  }
 }
 
 @media (min-width: 1024px) {
