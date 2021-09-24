@@ -22,10 +22,46 @@
         {{#if ../has_multiple_categories}}
         <li class="blocks-item">
           <a href='{{url}}' class="blocks-item-link">
-            <div class="blocks-img">
-              {{!-- {{#is id 360003619497 }} <img src="{{ asset 'name_image.jpg' }}" loading="lazy" alt="" /> {{/is}}
-              --}}
-            </div>
+            {{#is id 360003619497 }}
+            <span class="blocks-img"
+              style="background-image: url( {{ asset 'icon-rocket.svg' }}); background-size: 38px"
+              aria-hidden="true"></span>
+            {{/is}}
+
+            {{#is id 360003692657 }}
+            <span class="blocks-img"
+              style="background-image: url( {{ asset 'icon-document.svg' }}); background-size: 30px"
+              aria-hidden="true"></span>
+            {{/is}}
+
+            {{#is id 360003735297 }}
+            <span class="blocks-img" style="background-image: url( {{ asset 'icon-team.svg' }}); background-size: 38px"
+              aria-hidden="true"></span>
+            {{/is}}
+
+            {{#is id 4406279640337 }}
+            <span class="blocks-img"
+              style="background-image: url( {{ asset 'icon-import.svg' }}); background-size: 36px"
+              aria-hidden="true"></span>
+            {{/is}}
+
+            {{#is id 360003692717 }}
+            <span class="blocks-img" style="background-image: url( {{ asset 'icon-api.svg' }}); background-size: 44px"
+              aria-hidden="true"></span>
+            {{/is}}
+
+            {{#is id 360003625478 }}
+            <span class="blocks-img"
+              style="background-image: url( {{ asset 'icon-security.svg' }}); background-size: 34px"
+              aria-hidden="true"></span>
+            {{/is}}
+
+            {{#is id 360003692677 }}
+            <span class="blocks-img"
+              style="background-image: url( {{ asset 'icon-wallet.svg' }}); background-size: 30px"
+              aria-hidden="true"></span>
+            {{/is}}
+
 
             <h3 class="blocks-item-title">{{name}}</h3>
             <p class="blocks-item-description">{{excerpt description}}</p>

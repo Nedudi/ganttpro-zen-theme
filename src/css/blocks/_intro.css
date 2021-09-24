@@ -6,13 +6,30 @@
 }
 
 .intro__title {
+  position: relative;
+
   margin-bottom: 30px;
 
   font-weight: 900;
-
   font-size: calc(2em + 2vw);
   line-height: 1.3;
   text-align: center;
+  color: #003d36;
+}
+
+.intro__title::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -18px;
+
+  width: 26px;
+  height: 25px;
+
+  background-image: url("/guide/assets/icon-rays.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .intro__text {
@@ -28,6 +45,7 @@
 
 .intro__search {
   height: auto;
+  padding: 0;
   background-image: none;
 }
 
