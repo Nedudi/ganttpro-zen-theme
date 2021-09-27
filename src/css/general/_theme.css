@@ -303,12 +303,12 @@ textarea:focus {
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 1140px) {
   .container {
     padding: 0;
     width: 90%;
@@ -327,12 +327,12 @@ ul {
 }
 
 .error-page {
-  max-width: 1160px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 1140px) {
   .error-page {
     padding: 0;
     width: 90%;
@@ -784,7 +784,7 @@ input[type="submit"][disabled] {
 
 /***** Header *****/
 .header {
-  max-width: 1160px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 5%;
   position: relative;
@@ -794,7 +794,7 @@ input[type="submit"][disabled] {
   justify-content: space-between;
 }
 
-/* @media (min-width: 1160px) {
+/* @media (min-width: 1140px) {
   .header {
     padding: 0;
     width: 90%;
@@ -1066,14 +1066,14 @@ input[type="submit"][disabled] {
 }
 
 .footer-inner {
-  max-width: 1160px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 1140px) {
   .footer-inner {
     padding: 0;
     width: 90%;
@@ -1277,11 +1277,11 @@ input[type="submit"][disabled] {
   padding: 0;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .blocks-list {
     margin: 0 -15px;
   }
-}
+} */
 
 .blocks-item {
   border: 1px solid $brand_color;

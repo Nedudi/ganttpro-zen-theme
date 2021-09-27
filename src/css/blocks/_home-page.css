@@ -76,3 +76,10 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
+
+@media (min-width: 1270px) {
+  .home-page .blocks-list {
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+}

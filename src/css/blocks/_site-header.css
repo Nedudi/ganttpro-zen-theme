@@ -46,8 +46,8 @@
 
 @media (min-width: 768px) {
   .site-header {
-    padding-left: calc(5% - 15px);
-    padding-right: calc(5% - 15px);
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -84,8 +84,8 @@
 
 @media (min-width: 1270px) {
   .site-header {
-    max-width: 1190px;
-    padding-right: 0;
-    padding-left: 0;
+    max-width: 1140px;
+    padding-right: 2px;
+    padding-left: 2px;
   }
 }
