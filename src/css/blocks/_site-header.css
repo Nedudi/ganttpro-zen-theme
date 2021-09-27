@@ -4,7 +4,8 @@
 } */
 
 .site-header {
-  max-width: 1140px;
+  width: 100%;
+  max-width: 1270px;
   height: auto;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -43,6 +44,13 @@
   color: #212121;
 }
 
+@media (min-width: 768px) {
+  .site-header {
+    padding-left: calc(5% - 15px);
+    padding-right: calc(5% - 15px);
+  }
+}
+
 @media (min-width: 860px) {
   .site-header__logo a {
     display: flex;
@@ -71,5 +79,13 @@
     height: 100%;
 
     background-color: #c4c4c4;
+  }
+}
+
+@media (min-width: 1270px) {
+  .site-header {
+    max-width: 1190px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }

@@ -20,7 +20,7 @@
 .intro__title::before {
   content: "";
   position: absolute;
-  top: -16px;
+  top: -10px;
   left: -18px;
 
   width: 26px;

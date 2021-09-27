@@ -794,12 +794,12 @@ input[type="submit"][disabled] {
   justify-content: space-between;
 }
 
-@media (min-width: 1160px) {
+/* @media (min-width: 1160px) {
   .header {
     padding: 0;
     width: 90%;
   }
-}
+} */
 
 .logo img {
   max-height: 37px;
