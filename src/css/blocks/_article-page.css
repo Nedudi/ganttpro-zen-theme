@@ -204,4 +204,9 @@
   .article-page .sidenav-title {
     display: none;
   }
+
+  .article-page .article {
+    width: 100%;
+    max-width: 765px;
+  }
 }
