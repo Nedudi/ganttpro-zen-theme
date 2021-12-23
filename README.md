@@ -26,7 +26,10 @@
 
 **Примечание**
 
-- [Установка ZAT в Windows 10](https://develop.zendesk.com/hc/en-us/community/posts/360037023114--Tutorial-ZAT-installation-on-Windows-10)
+[System prep for app developers 1: Setting up your command-line interface](https://developer.zendesk.com/documentation/apps/getting-started/system-prep-for-app-developers/1-setting-up-your-command-line-interface/#win)
+
+[System prep for app developers 2: Managing Ruby versions](https://developer.zendesk.com/documentation/apps/getting-started/system-prep-for-app-developers/2-managing-ruby-versions/)
+
 - При запуске `zat theme preview`, что бы каждый раз не вводить данные аутентификации, в корне темы создать файл .zat (см. ниже)
 - Настройки темы, а так же переменные для CSS задаются в файле manifest.json
 - CSS-прероцессор не используется из-за особенностей ZAT
