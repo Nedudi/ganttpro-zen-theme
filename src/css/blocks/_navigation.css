@@ -21,6 +21,8 @@
   width: 100%;
 
   padding: 12px 0px;
+
+  color: #212121;
 }
 
 .navigation__burger .navigation__icon.x-icon {
@@ -96,6 +98,8 @@
   position: relative;
 
   padding: 12px 24px;
+
+  color: #212121;
 
   background-color: #e9ebed;
 }
