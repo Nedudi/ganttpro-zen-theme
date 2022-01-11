@@ -54,6 +54,8 @@
 .navigation button {
   margin: 0;
 
+  color: #212121;
+
   background-color: transparent;
   border: none;
   outline: none;
