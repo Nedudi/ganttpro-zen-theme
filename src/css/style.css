@@ -6,6 +6,7 @@
 
 /* Blocks */
 @import "./blocks/_btn.css";
+@import "./blocks/_navigation.css";
 @import "./blocks/_intro.css";
 @import "./blocks/_social.css";
 @import "./blocks/_breadcrumbs.css";

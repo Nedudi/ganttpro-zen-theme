@@ -29,6 +29,12 @@
   color: $link_color;
 }
 
+.category-page .breadcrumbs li a,
+.section-page .breadcrumbs li a,
+.article-page .breadcrumbs li a {
+  color: $link_color;
+}
+
 .category-page .breadcrumbs li a:hover,
 .section-page .breadcrumbs li a:hover,
 .article-page .breadcrumbs li a:hover {
