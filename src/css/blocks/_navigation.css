@@ -1,7 +1,8 @@
 .navigation {
-  font-size: 14px;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
   line-height: 24px;
-  color: #212121;
+  color: #202020;
 }
 
 .navigation__list {
@@ -22,7 +23,7 @@
 
   padding: 12px 0px;
 
-  color: #212121;
+  color: #202020;
 }
 
 .navigation__burger .navigation__icon.x-icon {
@@ -54,7 +55,7 @@
 .navigation button {
   margin: 0;
 
-  color: #212121;
+  color: #202020;
 
   background-color: transparent;
   border: none;
@@ -65,77 +66,92 @@
   transition: all 0.1s;
 }
 
-.navigation__item + .navigation__item {
-  margin-top: 1px;
-}
+/* First level */
+.navigation__item > button {
+  position: relative;
 
-.navigation__item button {
   width: 100%;
-  padding: 12px;
+  padding: 8px 8px 8px 28px;
 
+  font-weight: bold;
   text-align: left;
-
-  border-radius: 2px;
+  color: #909090;
 
   cursor: pointer;
 }
 
-.navigation__item.active > button,
-.navigation__item.current > button {
-  font-weight: bold;
-  color: #ffffff;
+.navigation__item > button svg {
+  position: absolute;
+  top: 5px;
+  left: 0;
 
-  background-color: #008a7a;
+  width: 24px;
+  height: 24px;
 }
 
-.navigation__item:not(.active):not(.current):hover {
-  background-color: #e9ebed;
-}
-
-.navigation__section-item + .navigation__section-item {
-  margin-top: 1px;
-}
-
+/* Second level  */
 .navigation__section-item > button {
   position: relative;
 
-  padding: 12px 24px;
+  padding: 4px 8px 4px 48px;
 
-  color: #212121;
-
-  background-color: #e9ebed;
+  font-size: 14px;
+  color: #202020;
 }
 
-.navigation__section-item > button::after {
+.navigation__section-item > button:hover,
+.navigation__section-item.active > button,
+.navigation__section-item.current > button {
+  color: #008a7a;
+}
+
+.navigation__section-item > button svg {
   content: "";
   position: absolute;
-  top: 50%;
-  right: 18px;
+  top: 6px;
+  left: 32px;
 
-  width: 0;
-  height: 0;
+  width: 6px;
+  height: 8px;
 
-  border-top: 4px solid #212121;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
+  fill: #202020;
+
+  transition: transform 0.13s;
 }
 
-.navigation__section-item.active > button::after {
-  transform: rotate(180deg);
+.navigation__section-item.active > button svg {
+  fill: #008a7a;
+
+  transform: rotate(90deg);
 }
 
+.navigation__section-item > button:hover svg,
+.navigation__section-item.current > button svg {
+  fill: #008a7a;
+}
+
+/* Third level  */
 .navigation__article-item > a {
   display: block;
-  padding: 4px 24px;
-}
+  margin-left: 28px;
+  padding: 4px 8px 4px 20px;
 
-.navigation__article-item.current > a {
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
   text-decoration: none;
+  color: #202020;
+
+  border-radius: 2px;
+
+  transition: all 0.13s;
 }
 
-.navigation__article-item.current > a:hover {
+.navigation__article-item.current > a,
+.navigation__article-item > a:hover {
   color: #008a7a;
+
+  background-color: #e6f4f2;
 }
 
 @media (min-width: 1024px) {

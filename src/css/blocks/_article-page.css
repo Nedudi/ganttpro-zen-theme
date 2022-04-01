@@ -1,9 +1,10 @@
 .article-page h1 {
   margin-bottom: 24px;
 
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 48px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  color: #202020;
 }
 
 .article-page .collapsible-sidebar-body {
@@ -28,7 +29,7 @@
 }
 
 .article-page .article-header {
-  margin-bottom: 24px;
+  margin-bottom: 0;
 }
 
 .article-page .article-meta > a {
@@ -48,9 +49,12 @@
   margin-top: 0;
 }
 
+/* Article body */
 .article-page .article-body {
-  font-size: 14px;
-  line-height: 24px;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
 }
 
 .article-page .article-body h2,
@@ -59,42 +63,38 @@
 .article-page .article-body h5,
 .article-page .article-body h6 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 12px;
 
-  color: #161616;
+  line-height: 42px;
+  color: #202020;
 }
 
 .article-page .article-body h2 {
-  margin-bottom: 6px;
-
   font-size: 24px;
-  line-height: 36px;
 }
 
 .article-page .article-body h3 {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 20px;
 }
 
 .article-page .article-body h4 {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 18px;
 }
 
 .article-page .article-body h5 {
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 16px;
 }
 
 .article-page .article-body h6 {
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 14px;
 }
 
-.article-page .article-body strong {
+.article-page .article-body strong,
+.article-page .article-body b {
   font-weight: bold;
   font-size: inherit;
   line-height: inherit;
+  color: inherit;
 }
 
 .article-page .article-body h2 strong,
@@ -109,13 +109,22 @@
 
 .article-page .article-body p {
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
 
 .article-page .article-body ul,
 .article-page .article-body ol {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+.article-page .article-body p ~ h2,
+.article-page .article-body p ~ h3,
+.article-page .article-body ul ~ h2,
+.article-page .article-body ul ~ h3,
+.article-page .article-body ol ~ h2,
+.article-page .article-body ol ~ h3 {
+  margin-top: 24px;
 }
 
 .article-page .article-body a:hover {
@@ -127,8 +136,8 @@
 }
 
 .article-page .article-body img {
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .article-page .article-body .alert-info,
@@ -152,6 +161,94 @@
   margin: 0;
   padding: 0 5px;
 }
+.pointer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 0 4px;
+
+  vertical-align: middle;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+
+  background-color: #ff9a00;
+  border-radius: 4px;
+
+  transform: translateY(-1px);
+}
+
+.article-page .article-body ol.pointer-list {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: num;
+}
+
+.article-page .article-body ol.pointer-list li {
+  position: relative;
+
+  padding-left: 32px;
+}
+
+.article-page .article-body ol.pointer-list li::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  content: counter(num);
+  counter-increment: num;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+
+  background-color: #ff9a00;
+  border-radius: 4px;
+}
+
+.article-page .article-body ol.pointer-list li > img,
+.article-page .article-body ol.pointer-list li > p {
+  margin-left: -20px;
+}
+
+.article-page .article-body .blockquote {
+  position: relative;
+
+  margin-top: 40px;
+  margin-bottom: 24px;
+  padding: 40px 20px;
+
+  border: 3px solid #008a7a;
+  border-radius: 5px;
+}
+
+.article-page .article-body .blockquote::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 22px;
+
+  width: 52px;
+  height: 32px;
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("./assets/icons/icon-quote.svg");
+}
+
+/* End Article body */
 
 .article-page .article-votes {
   padding-top: 36px;
@@ -192,13 +289,21 @@
   .article-page .article-body .alert-warning {
     padding: 30px;
   }
+
+  .article-page .article-body .blockquote {
+    padding: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .article-page .navigation {
+    padding-right: 20px;
+  }
+
   .article-page .article-container {
     display: grid;
-    grid-template-columns: 32% 68%;
-    column-gap: 34px;
+    grid-template-columns: 28% 72%;
+    column-gap: 28px;
   }
 
   .article-page .sidenav-title {
@@ -208,5 +313,15 @@
   .article-page .article {
     width: 100%;
     max-width: 765px;
+  }
+
+  .article-page .article-body .blockquote {
+    padding: 40px 68px;
+  }
+
+  .article-page .article-votes {
+    padding-bottom: 115px;
+
+    border-top: none;
   }
 }

@@ -2,6 +2,11 @@ body {
   min-width: 360px;
 }
 
+body *::selection {
+  color: #212121;
+  background-color: #e6f4f2;
+}
+
 h1,
 h2,
 h3,
