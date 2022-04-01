@@ -1,5 +1,4 @@
-/* Lato */
-@font-face {
+/* @font-face {
   font-family: "Lato";
   font-style: normal;
   font-weight: normal;
@@ -23,11 +22,10 @@
   src: local("Lato"), url($assets-Lato-Black-woff2) format("woff2"), url($assets-Lato-Black-woff) format("woff");
 }
 
-/* Inter */
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: normal;
   font-display: swap;
   src: local("Inter"), url($assets-Inter-Regular-woff2) format("woff2"), url($assets-Inter-Regular-woff) format("woff");
-}
+} */
