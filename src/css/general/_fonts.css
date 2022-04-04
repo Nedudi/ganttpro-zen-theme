@@ -1,9 +1,9 @@
-/* @font-face {
+@font-face {
   font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: local("Lato"), url($assets-Lato-Regular-woff2) format("woff2"), url($assets-Lato-Regular-woff) format("woff");
+  src: local("Lato"), url($assets-lato-regular-woff2) format("woff2"), url($assets-lato-regular-woff) format("woff");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: local("Lato"), url($assets-Lato-Bold-woff2) format("woff2"), url($assets-Lato-Bold-woff) format("woff");
+  src: local("Lato"), url($assets-lato-bold-woff2) format("woff2"), url($assets-lato-bold-woff) format("woff");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local("Lato"), url($assets-Lato-Black-woff2) format("woff2"), url($assets-Lato-Black-woff) format("woff");
+  src: local("Lato"), url($assets-lato-black-woff2) format("woff2"), url($assets-lato-black-woff) format("woff");
 }
 
 @font-face {
@@ -27,5 +27,5 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: local("Inter"), url($assets-Inter-Regular-woff2) format("woff2"), url($assets-Inter-Regular-woff) format("woff");
-} */
+  src: local("Inter"), url($assets-inter-regular-woff2) format("woff2"), url($assets-inter-regular-woff) format("woff");
+}

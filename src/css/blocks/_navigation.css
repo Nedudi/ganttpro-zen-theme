@@ -55,6 +55,7 @@
 .navigation button {
   margin: 0;
 
+  line-height: 24px;
   color: #202020;
 
   background-color: transparent;
@@ -74,6 +75,7 @@
   padding: 8px 8px 8px 28px;
 
   font-weight: bold;
+  font-size: 16px;
   text-align: left;
   color: #909090;
 
@@ -82,7 +84,7 @@
 
 .navigation__item > button svg {
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: 0;
 
   width: 24px;
@@ -108,7 +110,7 @@
 .navigation__section-item > button svg {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 11px;
   left: 32px;
 
   width: 6px;
