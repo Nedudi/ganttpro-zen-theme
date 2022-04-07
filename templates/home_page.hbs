@@ -1,6 +1,6 @@
 <style>
   body {
-    background-image: url('https://ganttpro.blob.core.windows.net/statics/media/images/zendesk/svg-line.svg');
+    background-image: url("{{asset 'line.svg'}}");
     background-position: top center;
     background-repeat: repeat-x;
     background-size: auto;
@@ -36,6 +36,11 @@
               aria-hidden="true"></span>
             {{/is}}
 
+            {{#is id 5250879378961 }}
+            <span class="blocks-img" style="background-image: url( {{ asset 'icon-views.svg' }}); background-size: 37px"
+              aria-hidden="true"></span>
+            {{/is}}
+
             {{#is id 360003692657 }}
             <span class="blocks-img"
               style="background-image: url( {{ asset 'icon-document.svg' }}); background-size: 30px"
@@ -47,6 +52,12 @@
               aria-hidden="true"></span>
             {{/is}}
 
+            {{#is id 5250907485969 }}
+            <span class="blocks-img"
+              style="background-image: url( {{ asset 'icon-management.svg' }}); background-size: 36px"
+              aria-hidden="true"></span>
+            {{/is}}
+
             {{#is id 4406279640337 }}
             <span class="blocks-img"
               style="background-image: url( {{ asset 'icon-import.svg' }}); background-size: 36px"
@@ -55,6 +66,12 @@
 
             {{#is id 360003692717 }}
             <span class="blocks-img" style="background-image: url( {{ asset 'icon-api.svg' }}); background-size: 44px"
+              aria-hidden="true"></span>
+            {{/is}}
+
+            {{#is id 5250956662033 }}
+            <span class="blocks-img"
+              style="background-image: url( {{ asset 'icon-mobile.svg' }}); background-size: 28px"
               aria-hidden="true"></span>
             {{/is}}
 
