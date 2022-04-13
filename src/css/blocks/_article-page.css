@@ -253,6 +253,14 @@
   background-image: url($assets-icon-quote-svg);
 }
 
+.article-page .article-body .blockquote p {
+  margin-bottom: 0;
+}
+
+.article-page .article-body .blockquote p + p {
+  margin-top: 12px;
+}
+
 /* End Article body */
 
 .article-page .article-votes {
