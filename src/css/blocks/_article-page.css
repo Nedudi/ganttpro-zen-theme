@@ -254,11 +254,13 @@
 }
 
 .article-page .article-body .blockquote p {
-  margin-bottom: 0;
+  margin-bottom: 12px;
 }
 
-.article-page .article-body .blockquote p + p {
-  margin-top: 12px;
+.article-page .article-body .blockquote p:last-child,
+.article-page .article-body .blockquote ul:last-child,
+.article-page .article-body .blockquote ol:last-child {
+  margin-bottom: 0;
 }
 
 /* End Article body */
