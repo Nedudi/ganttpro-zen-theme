@@ -161,13 +161,36 @@
   .navigation {
     position: sticky;
     top: 50px;
+
+    padding-bottom: 24px;
   }
 
   .navigation__list {
     height: auto;
-    padding-bottom: 24px;
+    max-height: 90vh;
+    padding-right: 9px;
 
-    overflow: visible;
+    overflow: auto;
+  }
+
+  .navigation__list::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+
+    background-color: #e7e7e7;
+    border-radius: 13px;
+    visibility: hidden;
+  }
+
+  .navigation__list::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    border-radius: 13px;
+    visibility: hidden;
+  }
+
+  .navigation__list:hover::-webkit-scrollbar,
+  .navigation__list:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
   }
 
   .navigation__burger {

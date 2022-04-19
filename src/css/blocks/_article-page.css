@@ -311,13 +311,9 @@
 }
 
 @media (min-width: 1024px) {
-  .article-page .navigation {
-    padding-right: 10px;
-  }
-
   .article-page .article-container {
     display: grid;
-    grid-template-columns: 28% 72%;
+    grid-template-columns: 28.5% 71.5%;
     column-gap: 28px;
   }
 
