@@ -74,6 +74,7 @@
       </section>
 
       <footer>
+        {{#if signed_in}}
         {{#with article}}
         <div class="article-votes votes">
           <span class="article-votes-question" id="article-votes-label">{{t 'was_this_article_helpful'}}</span>
@@ -81,13 +82,23 @@
             {{vote 'up' role='radio' class='button article-vote article-vote-up' selected_class="button-primary"}}
             {{vote 'down' role='radio' class='button article-vote article-vote-down' selected_class="button-primary"}}
           </div>
-          {{#if signed_in}}
+
           <small class="article-votes-count">
             {{vote 'label' class='article-vote-label'}}
           </small>
-          {{/if}}
         </div>
         {{/with}}
+        {{else}}
+        {{#with article}}
+        <div class="article-votes votes">
+          <span class="article-votes-question" id="article-votes-label">{{t 'was_this_article_helpful'}}</span>
+          <div class="article-votes-controls votes__controls" role="group" aria-labelledby="article-votes-label">
+            {{vote 'up' role='radio' class='button article-vote article-vote-up' selected_class="button-primary"}}
+            {{vote 'down' role='radio' class='button article-vote article-vote-down' selected_class="button-primary"}}
+          </div>
+        </div>
+        {{/with}}
+        {{/if}}
 
         <div class="article-return-to-top">
           <a href="#article-container">
