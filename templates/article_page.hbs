@@ -81,10 +81,11 @@
             {{vote 'up' role='radio' class='button article-vote article-vote-up' selected_class="button-primary"}}
             {{vote 'down' role='radio' class='button article-vote article-vote-down' selected_class="button-primary"}}
           </div>
-
+          {{#if signed_in}}
           <small class="article-votes-count">
             {{vote 'label' class='article-vote-label'}}
           </small>
+          {{/if}}
         </div>
         {{/with}}
 
