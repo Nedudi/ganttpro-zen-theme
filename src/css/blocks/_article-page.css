@@ -293,6 +293,7 @@
   border: none;
 }
 
+.article-page .article-vote.button-primary,
 .article-page .article-vote:hover {
   color: #ffffff;
 

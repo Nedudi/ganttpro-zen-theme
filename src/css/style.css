@@ -15,6 +15,7 @@
 @import "./blocks/_result-article.css";
 @import "./blocks/_app-stores.css";
 @import "./blocks/_pagination.css";
+@import "./blocks/_votes.css";
 
 @import "./blocks/_home-page.css";
 @import "./blocks/_category-page.css";
