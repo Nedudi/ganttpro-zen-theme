@@ -13,19 +13,6 @@
   </div>
 
   <div class="nav-wrapper">
-    {{!-- <button class="menu-button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t "
-      toggle_navigation"}}">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16"
-        class="icon-menu">
-        <path fill="none" stroke="currentColor" stroke-linecap="round" d="M1.5 3.5h13m-13 4h13m-13 4h13"></path>
-      </svg>
-    </button>
-
-    <nav class="user-nav site-header__nav" id="user-nav">
-      {{link "community"}}
-      {{link "new_request" class="submit-a-request"}}
-    </nav> --}}
-
     {{#if signed_in}}
     <div class="user-info dropdown">
       <button class="dropdown-toggle" aria-haspopup="true">
@@ -45,10 +32,6 @@
         {{link "sign_out" role="menuitem"}}
       </div>
     </div>
-    {{else}}
-    {{#link "sign_in" class="sign-in btn"}}
-    {{t "sign_in"}}
-    {{/link}}
     {{/if}}
   </div>
 </header>
