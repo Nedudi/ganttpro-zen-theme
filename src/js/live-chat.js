@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   window.__lc = window.__lc || {};
   window.__lc.license = 8254491;
-  // window.__lc.group = !{APPCONFIG.locales.supported[LOCALE].liveChatId};
+  window.__lc.group = 2;
 
   (function () {
     var lc = document.createElement('script');
