@@ -93,7 +93,7 @@ zd-autocomplete-title-multibrand {
   width: 12px;
   height: 12px;
 
-  background-image: url("https://ganttpro.blob.core.windows.net/statics/media/images/zendesk/icon-cross.svg");
+  background-image: url($assets-icon-cross-svg);
   background-size: contain;
   cursor: pointer;
 }

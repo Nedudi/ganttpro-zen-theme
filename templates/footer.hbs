@@ -6,7 +6,7 @@
         class="site-footer__logo" />
       {{/link}}
 
-      <p class="site-footer__copyright">© 2021 GanttPRO All rights reserved</p>
+      <p class="site-footer__copyright">© 2022 GanttPRO All rights reserved</p>
 
       <ul class="social">
         <li class="social__item">
@@ -175,8 +175,7 @@
         <p class="site-footer__nav-title">Support</p>
         <ul>
           <li>
-            <a href="https://blog.ganttpro.com/en/faq-en/?_ga=2.92002142.51396472.1631523663-1943221604.1629456423"
-              target="_blank">Help center</a>
+            <a href="/hc/en-us" target="_blank">Help center</a>
           </li>
           <li>
             <a href="https://ganttpro.com/en/terms-of-use-ganttpro/" target="_blank">Terms of service</a>
@@ -736,3 +735,21 @@
 
   </div>
 </footer>
+
+<script src="{{asset 'jquery-3.6.0.min.js'}}"></script>
+<script src="{{asset 'embed.v2.js'}}"></script>
+
+<script>
+  $(document).ready(function () {
+    var embed = new XbEmbedAuth({
+      el: 'body',
+      frameId: 'frame',
+      activeButtons: [
+        'facebook',
+        'google',
+        'linkedin',
+        'microsoft'
+      ]
+    }, "{{asset 'config.json'}}");
+  });
+</script>

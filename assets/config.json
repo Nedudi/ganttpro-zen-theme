@@ -1,0 +1,11 @@
+{
+  "frameUrl": "https://ganttpro.com/embed/embed.html",
+  "originlogin": "https://ganttpro.com",
+  "domains": {
+    "login": "https://ganttpro.com",
+    "app": "https://app.ganttpro.com/auth/token/"
+  },
+  "redirectIfAuth": null,
+  "appUrl": "https://app.ganttpro.com",
+  "isLogged": false
+}

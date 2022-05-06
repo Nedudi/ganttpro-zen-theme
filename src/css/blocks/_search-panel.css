@@ -68,7 +68,7 @@
 
   opacity: 1;
 
-  background-image: url("https://ganttpro.blob.core.windows.net/statics/media/images/zendesk/icon-cross.svg");
+  background-image: url($assets-icon-cross-svg);
   background-size: contain;
   cursor: pointer;
 }
