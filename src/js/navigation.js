@@ -161,6 +161,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function drawNavigation({ categories, sections, articles }) {
     let fragment = new DocumentFragment();
 
+    categories.sort((a, b) => a.position - b.position);
+    sections.sort((a, b) => a.position - b.position);
+    articles.sort((a, b) => a.position - b.position);
+
     // Caregories
     categories.forEach((category) => {
       let categoryElement = createCategoryElement(category);
