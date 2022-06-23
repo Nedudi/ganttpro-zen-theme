@@ -1,7 +1,7 @@
 {
   "name": "GanttPRO Zendesk Theme",
   "author": "GanttPRO",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -273,7 +273,7 @@
           "type": "checkbox",
           "description": "scoped_knowledge_base_search_description",
           "label": "scoped_knowledge_base_search_label",
-          "value": true
+          "value": false
         },
         {
           "identifier": "scoped_community_search",

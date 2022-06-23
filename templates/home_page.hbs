@@ -17,7 +17,8 @@
       <div class="hero-inner intro__search-inner">
         <h3 class="visibility-hidden">{{ t 'search' }}</h3>
 
-        {{search submit=true instant=settings.instant_search class='search search-full'}}
+        {{search submit=true scoped=settings.scoped_kb_search instant=settings.instant_search
+        class='search search-full'}}
       </div>
     </section>
   </section>

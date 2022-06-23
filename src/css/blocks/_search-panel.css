@@ -44,10 +44,8 @@
 .search-panel input[type="search"]:focus {
   color: $text_color;
 
-  background-color: #ffffff;
-  border: none;
-
   background-color: transparent;
+  border: none;
 }
 
 .search-panel input[type="search"]::placeholder {
