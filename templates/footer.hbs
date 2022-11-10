@@ -736,20 +736,4 @@
   </div>
 </footer>
 
-<script src="{{asset 'jquery-3.6.0.min.js'}}"></script>
-<script src="{{asset 'embed.v2.js'}}"></script>
-
-<script>
-  $(document).ready(function () {
-    var embed = new XbEmbedAuth({
-      el: 'body',
-      frameId: 'frame',
-      activeButtons: [
-        'facebook',
-        'google',
-        'linkedin',
-        'microsoft'
-      ]
-    }, "{{asset 'config.json'}}");
-  });
-</script>
+<script src="https://ganttpro.com/gpauth/client"></script>
