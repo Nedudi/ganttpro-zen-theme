@@ -11,8 +11,14 @@
 
 <div class="container home-page">
   <section class="intro">
+    {{#is help_center.locale "en-us"}}
     <h2 class="intro__title">Learn and level up <br> your skills</h2>
     <p class="intro__text">Welcome to the GanttPRO Help Center</p>
+    {{else}}
+    <h2 class="intro__title">Изучайте GanttPRO<br> быстро и легко.</h2>
+    <p class="intro__text">Добро пожаловать в учебный центр GanttPRO</p>
+    {{/is}}
+
     <section id="main-content" class="section hero intro__search">
       <div class="hero-inner intro__search-inner">
         <h3 class="visibility-hidden">{{ t 'search' }}</h3>
