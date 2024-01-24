@@ -26,12 +26,16 @@ function styles(cb) {
     .pipe(postcss([autoprefixer()]))
     .pipe(gulpif(mode === 'prod', cleanCSS()))
     .pipe(dest('./'));
-
-  cb();
 }
 
 function javascript(cb) {
-  return src([JS_PATH + 'theme.js', JS_PATH + 'main.js', JS_PATH + 'navigation.js', JS_PATH + 'live-chat.js'])
+  return src([
+    JS_PATH + 'theme.js',
+    JS_PATH + 'main.js',
+    JS_PATH + 'navigation.js',
+    JS_PATH + 'live-chat.js',
+    JS_PATH + 'global-statement.js',
+  ])
     .pipe(plumber())
     .pipe(gulpif(mode === 'dev', sourcemaps.init()))
     .pipe(concat('script.js'))
@@ -39,8 +43,6 @@ function javascript(cb) {
     .pipe(gulpif(mode === 'dev', sourcemaps.write()))
     .pipe(gulpif(mode === 'prod', uglify()))
     .pipe(dest('./'));
-
-  cb();
 }
 
 function track(cb) {
