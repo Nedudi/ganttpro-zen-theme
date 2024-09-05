@@ -6,7 +6,7 @@
 
 `npm run dev` - _сборка стилей и скриптов, отлеживать их изменение_
 
-`zat theme preview` - _запуск Zendesk App Tools для локального предпросмотра темы (из папки проекта)_
+`zcli themes:preview` - _запуск Zendesk Command Line Interface для локального предпросмотра темы (из папки проекта)_
 
 **Перед деплоем**
 
@@ -26,21 +26,18 @@
 
 **Примечание**
 
+Кратко об установке и настройке ZCLI:
+
+- Установить ZCLI: npm install @zendesk/zcli -g
+- Добавить профиль: zcli login -i
+- Запустить локальный предпросмотр темы: zcli themes:preview
+
+[Using ZCLI](https://developer.zendesk.com/documentation/apps/getting-started/using-zcli/)
+
 [System prep for app developers 1: Setting up your command-line interface](https://developer.zendesk.com/documentation/apps/getting-started/system-prep-for-app-developers/1-setting-up-your-command-line-interface/#win)
 
 [System prep for app developers 2: Managing Ruby versions](https://developer.zendesk.com/documentation/apps/getting-started/system-prep-for-app-developers/2-managing-ruby-versions/)
 
-- При запуске `zat theme preview`, что бы каждый раз не вводить данные аутентификации, в корне темы создать файл .zat (см. ниже)
 - Настройки темы, а так же переменные для CSS задаются в файле manifest.json
+- Не забывать изменять "version" в manifest.json при любых изменениях в теме
 - CSS-прероцессор не используется из-за особенностей ZAT
-- При написании CSS, руководствоваться [БЭМ - Быстрый старт](https://ru.bem.info/methodology/quick-start/)
-
-Содержимое .zat файла:
-
-```
-{
- "subdomain": "your_subdomain",
- "username": "your_username",
- "password": "your_password"
-}
-```
