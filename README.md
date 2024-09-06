@@ -11,6 +11,7 @@
 **Перед деплоем**
 
 `npm run build` - _сборка стилей и скриптов (минифицируются, удалятся sourcemap)_
+Изменить "version" в manifest.json
 
 ## Базовая структура
 
@@ -26,18 +27,16 @@
 
 **Примечание**
 
-Кратко об установке и настройке ZCLI:
+Кратко об установке и настройке:
 
 - Установить ZCLI: npm install @zendesk/zcli -g
 - Добавить профиль: zcli login -i
-- Запустить локальный предпросмотр темы: zcli themes:preview
+- Запустить локальный предпросмотр темы из текущей папки: zcli themes:preview
+- Настройки темы, а так же переменные для CSS задаются в файле manifest.json
+- CSS-прероцессор не используется из-за особенностей ZAT
 
 [Using ZCLI](https://developer.zendesk.com/documentation/apps/getting-started/using-zcli/)
 
-[System prep for app developers 1: Setting up your command-line interface](https://developer.zendesk.com/documentation/apps/getting-started/system-prep-for-app-developers/1-setting-up-your-command-line-interface/#win)
+[ZCLI](https://github.com/zendesk/zcli/)
 
-[System prep for app developers 2: Managing Ruby versions](https://developer.zendesk.com/documentation/apps/getting-started/system-prep-for-app-developers/2-managing-ruby-versions/)
-
-- Настройки темы, а так же переменные для CSS задаются в файле manifest.json
-- Не забывать изменять "version" в manifest.json при любых изменениях в теме
-- CSS-прероцессор не используется из-за особенностей ZAT
+[Zendesk developer](https://developer.zendesk.com/documentation/apps/)

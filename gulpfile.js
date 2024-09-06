@@ -34,7 +34,8 @@ function javascript(cb) {
     JS_PATH + 'main.js',
     JS_PATH + 'navigation.js',
     JS_PATH + 'live-chat.js',
-    JS_PATH + 'global-statement.js',
+    JS_PATH + 'cookieconsent.umd.js',
+    JS_PATH + 'cookieconsent-client.js',
   ])
     .pipe(plumber())
     .pipe(gulpif(mode === 'dev', sourcemaps.init()))
