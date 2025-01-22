@@ -29,14 +29,7 @@ function styles(cb) {
 }
 
 function javascript(cb) {
-  return src([
-    JS_PATH + 'theme.js',
-    JS_PATH + 'main.js',
-    JS_PATH + 'navigation.js',
-    JS_PATH + 'live-chat.js',
-    JS_PATH + 'cookieconsent.umd.js',
-    JS_PATH + 'cookieconsent-client.js',
-  ])
+  return src([JS_PATH + 'theme.js', JS_PATH + 'main.js', JS_PATH + 'navigation.js', JS_PATH + 'live-chat.js'])
     .pipe(plumber())
     .pipe(gulpif(mode === 'dev', sourcemaps.init()))
     .pipe(concat('script.js'))
