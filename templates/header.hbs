@@ -38,14 +38,14 @@
       </div>
     </div>
     {{else}}
-    {{#is help_center.locale "en-us"}}
-      <a class="btn sign-in" href="#/login">Sign in</a>
-    {{/is}}
     {{#is help_center.locale "ru"}}
       <a class="btn sign-in" href="#/login">Войти</a>
-    {{/is}}
-    {{#is help_center.locale "es"}}
-      <a class="btn sign-in" href="#/login">Iniciar sesión</a>
+    {{else}}
+      {{#is help_center.locale "es"}}
+        <a class="btn sign-in" href="#/login">Iniciar sesión</a>
+      {{else}}
+        <a class="btn sign-in" href="#/login">Sign in</a>
+      {{/is}}
     {{/is}}
     {{/if}}
   </div>
