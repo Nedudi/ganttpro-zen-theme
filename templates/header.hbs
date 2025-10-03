@@ -38,7 +38,15 @@
       </div>
     </div>
     {{else}}
-    <a class="btn sign-in" href="#/login">Sign in</a>
+    {{#is help_center.locale "ru"}}
+      <a class="btn sign-in" href="#/login">Войти</a>
+    {{else}}
+      {{#is help_center.locale "es"}}
+        <a class="btn sign-in" href="#/login">Iniciar sesión</a>
+      {{else}}
+        <a class="btn sign-in" href="#/login">Sign in</a>
+      {{/is}}
+    {{/is}}
     {{/if}}
   </div>
 </header>
