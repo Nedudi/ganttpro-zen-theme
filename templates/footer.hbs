@@ -6,7 +6,11 @@
         class="site-footer__logo" />
       {{/link}}
 
-      <p class="site-footer__copyright">© 2025 GanttPRO All rights reserved</p>
+      <p class="site-footer__copyright">
+        © <span id="copyright-year"></span> GanttPRO
+        {{#is help_center.locale "ru"}}Все права защищены{{else}}{{#is help_center.locale "es"}}Todos los derechos
+        reservados{{else}}All rights reserved{{/is}}{{/is}}
+      </p>
 
       <ul class="social">
         <li class="social__item">

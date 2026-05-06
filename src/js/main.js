@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
+  var copyrightYearNode = document.getElementById('copyright-year');
+
+  if (copyrightYearNode) {
+    copyrightYearNode.textContent = new Date().getFullYear();
+  }
+
   // hide menu to footer
   (function () {
     const footerNavList = document.querySelector('.site-footer__nav-list');
